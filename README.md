@@ -1,7 +1,4 @@
 # Welcome to [Slidev](https://github.com/slidevjs/slidev)!
-
-[Edit on StackBlitz ⚡️](https://sli.dev/new)
-
 To start the slide show:
 
 - `npm install`
