@@ -1,4 +1,5 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Welcome to Websparks Slidev!
+
 To start the slide show:
 
 - `npm install`
@@ -7,4 +8,4 @@ To start the slide show:
 
 Edit the [slides.md](./slides.md) to see the changes.
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+Learn more about Slidev on [documentation](https://sli.dev/).

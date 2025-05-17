@@ -2,8 +2,7 @@
 # try also 'default' to start simple
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -12,10 +11,8 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  ## Websparks Slidev Template
+  Professional presentation slides powered by Websparks.
 # persist drawings in exports and build
 drawings:
   persist: false
@@ -24,9 +21,9 @@ css: unocss
 wakeLock: "build"
 ---
 
-# Welcome to Slidev
+# Welcome to Websparks Slidev
 
-Presentation slides for developers
+Professional presentation slides for developers
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -38,21 +35,21 @@ Presentation slides for developers
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://websparks.ai" target="_blank" alt="Websparks"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
+    <carbon-globe />
   </a>
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide.
 -->
 
 ---
 
-# What is Slidev?
+# What is Websparks Slidev?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Websparks Slidev is a powerful presentation platform designed for developers, featuring:
 
 - 📝 **Text-based** - focus on the content with Markdown, and then style them later
 - 🎨 **Themable** - theme can be shared and used with npm packages
@@ -65,11 +62,10 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 <br>
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+Powered by Websparks AI technology
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
 -->
 
 <style>
@@ -88,7 +84,7 @@ h1 {
 
 # Navigation
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+Hover on the bottom-left corner to see the navigation's controls panel
 
 ### Keyboard Shortcuts
 
@@ -109,12 +105,12 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ---
 layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+image: https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80
 ---
 
 # Code
 
-Use code snippets and get the highlighting directly![^1]
+Use code snippets with syntax highlighting!
 
 ```ts {all|2|1-6|9|all}
 interface User {
@@ -132,8 +128,6 @@ function updateUser(id: number, update: User) {
 ```
 
 <arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
 
 <style>
 .footnotes-sep {
@@ -164,8 +158,6 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 
 <!-- ./components/Counter.vue -->
 <Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
 
 </div>
 <div>
@@ -208,9 +200,6 @@ theme: seriph
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
 ---
 preload: false
 ---
@@ -224,7 +213,7 @@ Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
   v-motion
   :initial="{ x: -80 }"
   :enter="{ x: 0 }">
-  Slidev
+  Websparks Slidev
 </div>
 ```
 
@@ -258,7 +247,7 @@ Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
     v-motion
     :initial="{ x: -80, opacity: 0}"
     :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
+    Websparks
   </div>
 </div>
 
@@ -313,13 +302,11 @@ $$
 
 <br>
 
-[Learn more](https://sli.dev/guide/syntax#latex)
-
 ---
 
 # Diagrams
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+Create diagrams and graphs directly in your Markdown.
 
 <div class="grid grid-cols-3 gap-10 pt-4 -mb-6">
 
@@ -373,14 +360,11 @@ database "MySql" {
 
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
-
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Powered by Websparks
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+[Visit Websparks](https://websparks.ai) · [Team](https://websparks.ai/team) · [Contact Us](https://websparks.ai/contact)
